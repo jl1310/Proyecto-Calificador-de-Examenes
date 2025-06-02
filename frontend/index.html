@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistema de Calificación Autónoma</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="LogoUMG1.png" alt="Logo Universidad Mariano Gálvez" class="logo" />
+      <h1>Calificación Autónoma de Exámenes</h1>
+    </div>
+
+    <form id="examForm">
+      <label for="reference">Material de Referencia (PDF/DOCX):</label>
+      <input type="file" id="reference" accept=".pdf,.docx" /><br><br>
+
+      <label for="examImage">Imagen del Examen:</label>
+      <input type="file" id="examImage" accept="image/*" required /><br><br>
+
+      <label for="difficulty">Nivel de Exigencia (1 - 10):</label>
+      <input type="range" id="difficulty" min="1" max="10" value="5" />
+      <span id="difficultyLabel">5</span><br><br>
+
+      <button type="submit">Calificar Examen</button>
+    </form>
+
+    <hr/>
+
+    <div id="results">
+      <h2>Resultados:</h2>
+      <pre id="output">Esperando calificación...</pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

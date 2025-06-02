@@ -1,0 +1,21 @@
+# Ignora carpetas y archivos generados
+__pycache__/
+*.pyc
+*.docx
+*.jpg
+*.png
+
+# Carpeta de reportes generados
+reportes/
+
+# Archivos temporales
+temp.*
+*.log
+
+# Entornos virtuales
+env/
+.venv/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
